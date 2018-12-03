@@ -1,0 +1,12 @@
+<p>
+  <label for={{concat "upload-" elementId}}>Select font files</label>
+  <input
+    id={{concat "upload-" elementId}}
+    type="file"
+    onchange={{action "onFileChange" value="target.files"}}
+    multiple
+    accept="font/*"
+  >
+</p>
+
+{{yield}}

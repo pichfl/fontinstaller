@@ -1,0 +1,36 @@
+<h1>Font Installer</h1>
+
+<p class="subtitle">
+  Use any .ttf or .otf on your iOS device. <br>
+  {{#link-to "about"}}Learn more{{/link-to}}
+</p>
+
+{{input-upload}}
+
+{{#if this.mobileconfig.fontsAsArray}}
+  <ul class="list-fonts">
+    {{#each this.mobileconfig.fontsAsArray as |font|}}
+      {{cell-font
+        tagName="li"
+        name=font.name
+        designer=font.designer
+        version=font.version
+        onDelete=(action "remove" font)
+      }}
+    {{/each}}
+  </ul>
+{{/if}}
+
+<button
+  type="button"
+  class="button-install"
+  disabled={{installDisabled}}
+  {{action "install"}}
+>
+  Install
+</button>
+
+<p class="subtitle">Pressing the Install button will ask you to provide a name for your configuration. Doing so will make it easier to find the right profile if you use this multiple times. </p>
+<p class="subtitle">Please note that these profiles are unsigned as they are created directly on your device. You can see everything that is installed by the profile before approving it.</p>
+
+{{outlet}}

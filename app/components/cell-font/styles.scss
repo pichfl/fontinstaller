@@ -1,0 +1,38 @@
+& {
+  position: relative;
+  padding: 8px 50px 8px 10px;
+  background: #f1f1f1;
+  color: #abb0b6;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.name {
+  display: block;
+  color: #61676c;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.designer,
+.version {
+  display: block;
+}
+
+.designer {
+  margin-top: 4px;
+}
+
+.action-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 10px;
+  background: transparent;
+
+  svg {
+    fill: #d9dbdd;
+  }
+}

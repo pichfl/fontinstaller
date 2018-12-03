@@ -1,0 +1,23 @@
+& {
+  margin: 20px 0;
+}
+
+input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+label {
+  display: block;
+  padding: 15px;
+  background: #389ee6;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+<p>{{#link-to "index"}}Back{{/link-to}}</p>
+
+<p>
+  This web app wraps your font files into a configuration that can be used on your iOS
+  device. This is done on your device. Nothing is uploaded. It does not touch or alter
+  your font files either. Please consult your font licenses and count the device you plan
+  to use them on as a computer/workstation, even if it fits your pocket.
+</p>
+
+<p>
+  Speaking in more technical terms, this web app creates a mobileconfig file which
+  contains the original font files in base64 encoding. These files can also be generated
+  using <a href="https://support.apple.com/de-de/apple-configurator">Apple Configurator</a> on a Mac, but my goal was to create something
+  that works from an iOS device without installing anything but the fonts you need.
+</p>
+
+<p>This app is intended to be used on an iOS device, but who am I to tell you what to do. The generated mobileconfig files are plain XML so you might learn something interesting. I doubt they be useful anywhere else though.</p>
+
+<p>There are multiple apps on the iOS App Store that do this as well, but I wasn't able to bundle fonts and had to install them one by one which was more than annoying.</p>
+
+<br>
+<br>
+
+<p class="subtitle">If you are a font studio looking to run something similar for your customers, please <a href="https://florianpicher.de">contact me.</a> There are more ways to do this and this client side solution has it's downsides as I wanted to be extra careful not to violate any terms or licenses.</p>
+
+{{outlet}}
